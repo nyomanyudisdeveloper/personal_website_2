@@ -15,7 +15,7 @@ const menuItems = [
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("hero");
+  // const [activeSection, setActiveSection] = useState("hero");
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md  border-b">
       <div className="container">
@@ -61,10 +61,10 @@ export const Header = () => {
                   return (
                     <button
                       className={cn(
-                        "block w-full text-left px-4 py-2 text-sm font-medium rounded-md transition-colors",
-                        activeSection === item.id
-                          ? "bg-primary/10 text-primary"
-                          : "text-muted-foreground hover:bg-accent"
+                        "block w-full text-left px-4 py-2 text-sm font-medium rounded-md transition-colors"
+                        // activeSection === item.id
+                        //   ? "bg-primary/10 text-primary"
+                        //   : "text-muted-foreground hover:bg-accent"
                       )}
                       key={item.id}
                     >

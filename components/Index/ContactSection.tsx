@@ -4,7 +4,7 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
 import { Mail, MessageSquare } from "lucide-react";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 
 export const ContactSection = () => {
@@ -37,7 +37,8 @@ export const ContactSection = () => {
           "Sending Message Failed!, Please try alternative way to contact me like Linkedin."
         );
       }
-    } catch (error) {
+    } catch (error: unknown) {
+      console.log("handleSubmitForm Error = ", error);
       setIsLoading(false);
       alert(
         "Sending Message Failed!, Please try alternative way to contact me like Linkedin."
@@ -122,7 +123,7 @@ export const ContactSection = () => {
                 className="flex items-center gap-3 text-gray-600 hover:text-primary transition-colors "
               >
                 <MessageSquare className="w-5 h-5" />
-                Let's chat on LinkedIn
+                Lets chat on LinkedIn
               </a>
             </div>
           </div>
