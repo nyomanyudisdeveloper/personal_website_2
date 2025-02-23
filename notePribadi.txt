@@ -1,0 +1,5 @@
+class tailwind yang perlu diperlajari lagi:
+backdrop-blur-md
+inline-block
+
+Untuk class container kenapa taronya di tailwind.config.ts bukan di global.css 
