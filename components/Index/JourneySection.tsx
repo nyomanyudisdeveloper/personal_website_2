@@ -3,49 +3,7 @@
 import { BriefcaseIcon, GraduationCapIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-
-interface JourneyEntry {
-  id: number;
-  title: string;
-  description: string;
-  yearRange: string;
-  type: "work" | "education";
-}
-
-const journeyData: JourneyEntry[] = [
-  {
-    id: 1,
-    title: "Senior Software Engineer",
-    description:
-      "Led development of enterprise-level applications, mentored junior developers, and implemented CI/CD pipelines.",
-    yearRange: "2021 - Present",
-    type: "work",
-  },
-  {
-    id: 2,
-    title: "Master's in Computer Science",
-    description:
-      "Specialized in Software Engineering and Artificial Intelligence. Graduated with honors.",
-    yearRange: "2019 - 2021",
-    type: "education",
-  },
-  {
-    id: 3,
-    title: "Software Developer",
-    description:
-      "Developed full-stack web applications using React, Node.js, and PostgreSQL.",
-    yearRange: "2018 - 2021",
-    type: "work",
-  },
-  {
-    id: 4,
-    title: "Bachelor's in Computer Science",
-    description:
-      "Foundation in computer science principles, data structures, and algorithms.",
-    yearRange: "2014 - 2018",
-    type: "education",
-  },
-];
+import { journeyData } from "@/data/index/journey";
 
 export const JourneySection = () => {
   return (
