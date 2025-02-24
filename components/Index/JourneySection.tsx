@@ -35,12 +35,7 @@ export const JourneySection = () => {
                   key={entry.id}
                   initial={{
                     opacity: 0,
-                    x:
-                      window.innerWidth >= 768
-                        ? index % 2 == 0
-                          ? -50
-                          : 50
-                        : 50,
+                    x: index % 2 == 0 ? -50 : 50,
                   }}
                   whileInView={{
                     opacity: 1,
