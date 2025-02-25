@@ -42,8 +42,9 @@ export const HeroSection = () => {
               Educator, and Tech Enthusiast
             </h1>
             <p className="text-gray-600 text-lg max-w-xl">
-              I am a Software Developer that can help you create a website or
-              mobile application that not only meets functionality requirements
+              I am a Software Developer that can help you create a website,
+              mobile application, automation testing, and dashboard analysis data 
+              that not only meets functionality requirements
               but also offers a decent price and great performance.
             </p>
             <div className="flex flex-wrap gap-4">

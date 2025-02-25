@@ -79,7 +79,7 @@ export const PortofolioSection = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
-                  className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                  className=" bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
                 >
                   <div className="aspect-video overflow-hidden">
                     <img
@@ -88,26 +88,42 @@ export const PortofolioSection = () => {
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2">
-                      {project.title}
-                    </h3>
-                    <p className="text-gray-600 mb-4">{project.description}</p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="text-sm bg-primary/10 text-primary px-3 py-1 rounded-full"
-                        >
-                          {tag}
-                        </span>
-                      ))}
+                  <div className="p-6  justify-between">
+                    <div>
+                      <h3 className="text-xl font-semibold mb-2">
+                        {project.title}
+                      </h3>
+                      <p className="text-gray-600 mb-4">{project.description}</p>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="text-sm bg-primary/10 text-primary px-3 py-1 rounded-full"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                    <div className="space-y-4">
-                      <Button className="w-full" asChild>
-                        <a href={project.demoUrl}>Live Demo</a>
-                      </Button>
-                    </div>
+                    
+                      {project.sourceUrl ?
+                        <div className="flex flex-row justify-evenly">
+                          <Button className="w-1/2 mr-2" asChild>
+                            <a target="_blank" href={project.demoUrl}>Live Demo</a>
+                          </Button>
+                          <Button variant={"outline"} className="w-1/2 ml-2" asChild>
+                            <a target="_blank" href={project.sourceUrl}>Source Code</a>
+                          </Button>
+                        </div>
+                        : 
+                        <div className="space-y-4">
+                          <Button className="w-full" asChild>
+                            <a target="_blank" href={project.demoUrl}>Live Demo</a>
+                          </Button>
+                        </div>
+                      }
+                      
+                    
                   </div>
                 </motion.div>
               ))}
