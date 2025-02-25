@@ -12,6 +12,15 @@ interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Yudis Aditya (Personal Website)",
+    description: "This is my own personal website to introduce myself as programmer. It has responsive design, smooth animation, and support for SEO. It can also send message to me in Section Contact for real. ",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    tags: ["Typescript","Next JS", "nodemailer", "Lovable.dev", "tailwind", "shadcn", "framer-animation"],
+    demoUrl: "https://yudisaditya.com/",
+    sourceUrl: "https://github.com/nyomanyudisdeveloper/personal_website_2",
+    category: "website",
+  },
+  {
     title: "Kerja Mudahkan (Job Portal)",
     description: "This project is created because i try to learn how to use lovable.dev to create website with framework React JS. For now all data in this website is dummy, except login is already integrated with API. It is prototype website for job-portal with basic feature like list job, company, etc",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
