@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Index/Header";
 import { Footer } from "@/components/Index/Footer";
-import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,9 +26,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="msvalidate.01" content="78015F20BFCF20160BBBD49EC5FC17F8" />
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

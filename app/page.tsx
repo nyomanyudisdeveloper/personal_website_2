@@ -38,6 +38,7 @@ export default function Home() {
     <>
       <Head>
         <title>Personal Website | Yudis Aditya</title>
+        <meta name="msvalidate.01" content="78015F20BFCF20160BBBD49EC5FC17F8" />
         <meta name="description" content="Personal website of Yudis Aditya, a Software Developer and Tech Educator." />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </Head>
